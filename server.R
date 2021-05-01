@@ -121,8 +121,8 @@ filterBikes <- function(bikes, providers, devicetypes){
 
 ### Load Data
 # Get systems list from GitHub
-systems <- read_csv('https://raw.githubusercontent.com/black-tea/scooties/master/data/systems.csv')
-providerColors <- read_csv('https://raw.githubusercontent.com/black-tea/scooties/master/data/provider_colors.csv')
+systems <- read_csv('https://raw.githubusercontent.com/kevinamezaga/swarm-of-scooters/master/data/systems.csv')
+providerColors <- read_csv('https://raw.githubusercontent.com/kevinamezaga/swarm-of-scooters/master/data/provider_colors.csv')
 
 # Select providers from systems list
 providerlist <- systems %>%
@@ -276,13 +276,13 @@ server <- function(input, output) {
   # Map
   output$map <- renderLeaflet({
     
-    # Intial map view set to LA
+    # Intial map view set to Miami
     map <- leaflet(options(leafletOptions(preferCanvas = TRUE))) %>%
       addProviderTiles(providers$CartoDB.Positron, options = providerTileOptions(
         maxZoom=18,
         updateWhenZooming=FALSE,
         updateWhenIdle=TRUE)) %>%
-      setView(lng=-118.329327, lat=34.0546143, zoom=12)
+      setView(lng=-80.1918, lat=25.7617, zoom=12)
     
     return(map)
     })
