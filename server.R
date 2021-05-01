@@ -57,15 +57,15 @@ getDocklessDevices <- function (provider, url) {
     # reformat vehicle type
     if(provider=='jump'){
       rdf <- rdf %>% mutate(vehicle_type=if_else(jump_vehicle_type=='bike','ebike', 'scooter'))
-    } else if(provider %in% c('bird','wheels','razor','skip','wind')){
+    } else if(provider %in% c('bird','wheels','razor','skip','wind','spin')){
       rdf <- rdf %>% mutate(vehicle_type='scooter')
     } else if(provider=='lime'){
       print('limeplaceholderlogic')
     } else if(provider=='cyclehop'){
       rdf <- rdf %>% mutate(vehicle_type=if_else(is_ebike==1,'ebike','bike'))
-    } else if(provider=='lyft'){
+    } else if(provider %in% c('lyft','helbiz')){
       rdf <- rdf %>% mutate(vehicle_type=if_else(type=='electric_scooter','scooter','ebike'))
-    } 
+    }
     # TODO: add SPIN
     
     # format as sf df
@@ -247,13 +247,13 @@ server <- function(input, output) {
     return(neighborhoodCt)
   })
   
-  # Create City Select input, set default city to LA
+  # Create City Select input, set default city to Miami
   output$citySelect <- renderUI({
     
     selectizeInput(inputId='citychoice',
                    label='City',
                    choices=cities,
-                   selected="la_region",
+                   selected="miami",
                    multiple=FALSE)
   })
   
@@ -276,13 +276,13 @@ server <- function(input, output) {
   # Map
   output$map <- renderLeaflet({
     
-    # Intial map view set to Miami
+    # Intial map view set to LA
     map <- leaflet(options(leafletOptions(preferCanvas = TRUE))) %>%
       addProviderTiles(providers$CartoDB.Positron, options = providerTileOptions(
         maxZoom=18,
         updateWhenZooming=FALSE,
         updateWhenIdle=TRUE)) %>%
-      setView(lng=-80.1918, lat=25.7617, zoom=12)
+      setView(lng=-118.329327, lat=34.0546143, zoom=12)
     
     return(map)
     })
