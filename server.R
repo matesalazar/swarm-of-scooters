@@ -57,7 +57,7 @@ getDocklessDevices <- function (provider, url) {
     # reformat vehicle type
     if(provider=='jump'){
       rdf <- rdf %>% mutate(vehicle_type=if_else(jump_vehicle_type=='bike','ebike', 'scooter'))
-    } else if(provider %in% c('bird','wheels','razor','skip','wind','spin')){
+    } else if(provider %in% c('bird','wheels','razor','skip','wind','spin','bolt')){
       rdf <- rdf %>% mutate(vehicle_type='scooter')
     } else if(provider=='lime'){
       print('limeplaceholderlogic')
