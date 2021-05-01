@@ -63,7 +63,7 @@ getDocklessDevices <- function (provider, url) {
       print('limeplaceholderlogic')
     } else if(provider=='cyclehop'){
       rdf <- rdf %>% mutate(vehicle_type=if_else(is_ebike==1,'ebike','bike'))
-    } else if(provider %in% c('lyft')){
+    } else if(provider %in% c('lyft','helbiz')){
       rdf <- rdf %>% mutate(vehicle_type=if_else(type=='electric_scooter','scooter','ebike'))
     }
     # TODO: add SPIN
