@@ -23,10 +23,11 @@ dashboardPage(
         uiOutput('providerSelect'),
         checkboxGroupInput('deviceGroup', label='Device Type', choices=deviceTypes, selected=deviceTypes, inline=TRUE),
         actionButton("download", "Refresh Data")),
-        HTML("<div style='padding-left:15px; padding-right:15px'><i>This map shows the current location of dockless
+        HTML("<div style='padding-left:15px; padding-right:15px'><strong>REMASTERED!</strong><i><br>This map shows the current location of dockless
              devices in cities throughout the U.S. based on publicly-available GBFS feeds.
              Read more about the project <a target='_blank' href='https://medium.com/p/55a2afca46b1' rel='noopener noreferrer'>
-             here</a>.<br><br>This fork of the original project is maintained by <a target='_blank' href='https://mostlikelykevin.com' rel='noopener noreferrer'>Kevin Amézaga</a> and the <a target='_blank' href='https://riders.miami' rel='noopener noreferrer'>Miami Riders Alliance</a>.</i></div>")),
+             here</a>.
+             </i><br><br>This fork of the original project is maintained by <a target='_blank' href='https://mostlikelykevin.com' rel='noopener noreferrer'>Kevin Amézaga</a> and the <a target='_blank' href='https://riders.miami' rel='noopener noreferrer'>Miami Riders Alliance</a>.</div>")),
   dashboardBody(
     tags$head(tags$style(HTML('
       .main-header .logo {
