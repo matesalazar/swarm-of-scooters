@@ -25,8 +25,8 @@ dashboardPage(
         actionButton("download", "Refresh Data")),
         HTML("<div style='padding-left:15px; padding-right:15px'><i>This map shows the current location of dockless
              devices in cities throughout the U.S. based on publicly-available GBFS feeds.
-             Read more about the project <a href='https://medium.com/p/55a2afca46b1'>
-             here</a>.</i></div>")),
+             Read more about the project <a target='_blank' href='https://medium.com/p/55a2afca46b1' rel='noopener noreferrer'>
+             here</a>.<br><br>This fork of the original project is maintained by <a target='_blank' href='https://mostlikelykevin.com' rel='noopener noreferrer'>Kevin Amézaga</a> and the <a target='_blank' href='https://riders.miami' rel='noopener noreferrer'>Miami Riders Alliance</a>.</i></div>")),
   dashboardBody(
     tags$head(tags$style(HTML('
       .main-header .logo {

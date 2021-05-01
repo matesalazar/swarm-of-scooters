@@ -21,7 +21,7 @@ Los Angeles Region,la_region,Wheels,wheels,https://la-gbfs.getwheelsapp.com/free
 Louisville,louisville,Bird,bird,https://mds.bird.co/gbfs/louisville/free_bikes
 Miami,miami,Bird,bird,https://mds.bird.co/gbfs/miami/free_bikes
 Miami,miami,Lyft,lyft,https://s3.amazonaws.com/lyft-lastmile-production-iad/lbs/mia/free_bike_status.json
-Miami,miami,Helbiz,helbiz,https://s3.amazonaws.com/lyft-lastmile-production-iad/lbs/mia/free_bike_status.json
+Miami,miami,Helbiz,helbiz,https://api.helbiz.com/admin/reporting/miami/gbfs/free_bike_status.json
 Miami,miami,Wheels,wheels,https://mia-gbfs.getwheelsapp.com/free_bike_status.json
 Miami,miami,Bolt,bolt,https://api-lb.micromobility.com/mia/gbfs/en/free_bike_status.json
 Miami,miami,Spin,spin,https://gbfs.spin.pm/api/gbfs/v1/miami/free_bike_status

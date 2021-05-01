@@ -63,7 +63,7 @@ getDocklessDevices <- function (provider, url) {
       print('limeplaceholderlogic')
     } else if(provider=='cyclehop'){
       rdf <- rdf %>% mutate(vehicle_type=if_else(is_ebike==1,'ebike','bike'))
-    } else if(provider %in% c('lyft','helbiz')){
+    } else if(provider %in% c('lyft')){
       rdf <- rdf %>% mutate(vehicle_type=if_else(type=='electric_scooter','scooter','ebike'))
     }
     # TODO: add SPIN
@@ -276,13 +276,13 @@ server <- function(input, output) {
   # Map
   output$map <- renderLeaflet({
     
-    # Intial map view set to LA
+    # Intial map view set to Miami
     map <- leaflet(options(leafletOptions(preferCanvas = TRUE))) %>%
       addProviderTiles(providers$CartoDB.Positron, options = providerTileOptions(
         maxZoom=18,
         updateWhenZooming=FALSE,
         updateWhenIdle=TRUE)) %>%
-      setView(lng=-118.329327, lat=34.0546143, zoom=12)
+      setView(lng=-80.1918, lat=25.7617, zoom=12)
     
     return(map)
     })
@@ -309,6 +309,8 @@ server <- function(input, output) {
     # Resize map bounds to extent
     if(input$citychoice == "la_region"){
       leafletProxy("map") %>% setView(lng=-118.329327, lat=34.0546143, zoom=12)
+    } else if(input$citychoice == "miami"){
+      leafletProxy("map") %>% setView(lng=-80.1918, lat=25.7617, zoom=12)
     } else {
       leafletProxy("map") %>% fitBounds(bbox[1], bbox[2], bbox[3], bbox[4])
     }
