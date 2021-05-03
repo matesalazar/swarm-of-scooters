@@ -24,8 +24,9 @@ The service was forked by [Kevin Amézaga](https://mostlikelykevin.com) and is n
 - [x] Fix issue: Cities w/out bikes
 - [x] Move hex colors to `data` and import into app
 - [x] Add Wheels & Skip to map
+- [x] Fork and Deploy to shinyapps.io for Remastered at [https://riders.miami/scoottracker](https://riders.miami/scoottracker)
 - [x] Add Miami's Scooter Providers (KA)
-- [x] Add Mopeds
+- [x] Add Mopeds & E-Mopeds to UI (KA)
 
 #### GBFS Feeds
 These data are made publicly available by dockless mobility companies either voluntarily or as required by municipalities for a permit to operate. They are formatted according to the [General Bikeshare Feed Specification (GBFS)](https://github.com/NABSA/gbfs) that is maintained by the [North American Bike Share Association (NABSA)](https://nabsa.net/). Although GBFS was originally designed for docked bikeshare, it can be adapted fairly easily to cover the broader category of dockless devices as well.  
