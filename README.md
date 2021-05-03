@@ -35,12 +35,13 @@ The following table includes the color that I used to symbolize the provider in 
 | Provider |   Icon    |   Hex   |
 |:--------:|:---------:|:-------:|
 | Bird     | ![bird]   | #000000 |
+| Bolt     | ![bolt]   | #5DBCD2 |
 | HOPR     | ![hopr]   | #5DBCD2 |
 | JUMP     | ![jump]   | #F36396 |
 | Lime     | ![lime]   | #24D000 |
 | Lyft     | ![lyft]   | #4F1397 |
 | Razor    | ![razor]  | #FF0000 |
-| Helbiz   | ![helbiz]  | #FCCE24 |                                                                                          
+| Helbiz   | ![helbiz] | #FCCE24 |                                                                                          
 | Spin     | ![spin]   | #FF5503 |
 | Wheels   | ![wheels] | #3D4CB7 |
 | Wind     | ![wind]   | #5E7C8B |
