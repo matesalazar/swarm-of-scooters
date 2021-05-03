@@ -40,7 +40,7 @@ The following table includes the color that I used to symbolize the provider in 
 | Lime     | ![lime]   | #24D000 |
 | Lyft     | ![lyft]   | #4F1397 |
 | Razor    | ![razor]  | #FF0000 |
-| Skip     | ![skip]   | #FCCE24 |                                                                                          
+| Helbiz   | ![helbiz]   | #FCCE24 |                                                                                          
 | Spin     | ![spin]   | #FF5503 |
 | Wheels   | ![wheels] | #3D4CB7 |
 | Wind     | ![wind]   | #5E7C8B |
