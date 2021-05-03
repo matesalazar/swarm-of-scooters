@@ -11,7 +11,7 @@ providerValues <- c('bird','hopr','jump','lime','lyft','razor')
 providerHTML <- lapply(1:length(providerNames), function(x){
   lblHTML <- '<img src="%s_circle.png" height="12" width="12" style="margin: 0px 4px 2px 0px">%s'
   return(HTML(sprintf(lblHTML, providerValues[x], providerNames[x])))})
-deviceTypes <- list('Scooter'='scooter','E-Bike'='e-bike','Bike'='bike','Moped'='moped','E-Moped',='e-moped')
+deviceTypes <- list('Scooter'='scooter','E-Bike'='e-bike','Bike'='bike','Moped'='moped','E-Moped'='e-moped')
 
 # Dashboard
 dashboardPage(
