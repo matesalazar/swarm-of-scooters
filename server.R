@@ -60,7 +60,7 @@ getDocklessDevices <- function (provider, url) {
     } else if(provider %in% c('bird','wheels','razor','skip','wind','spin','bolt')){
       rdf <- rdf %>% mutate(vehicle_type='scooter')
     } else if(provider=='lime'){
-      print('limeplaceholderlogic')
+      rdf <- rdf %>% mutate(vehicle_type=if_else(vehicle_type=='bike','ebike', 'scooter','moped'))
     } else if(provider=='cyclehop'){
       rdf <- rdf %>% mutate(vehicle_type=if_else(is_ebike==1,'ebike','bike'))
     }else if(provider == 'helbiz'){

@@ -1,6 +1,8 @@
 # Swarm of Scooters
 ![screenshot] 
-This web map shows the current location of all available dockless devices available for select cities. This map was constructed using R's Shiny Library.
+This web map shows the current location of all available dockless devices available for select cities. This map was constructed using R's Shiny Library by [Tim Black](https://github.com/black-tea).
+
+The service was forked by [Kevin Amézaga](https://mostlikelykevin.com) and is now maintained by the [Miami Riders Alliance](https://riders.miami) as part of the [Mobile Miami Coalition](https://coalition.miami).
 
 #### TODO  
 - [x] Fix color for Spin
