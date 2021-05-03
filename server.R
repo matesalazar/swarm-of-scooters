@@ -56,17 +56,19 @@ getDocklessDevices <- function (provider, url) {
   if(is.data.frame(rdf)){
     # reformat vehicle type
     if(provider=='jump'){
-      rdf <- rdf %>% mutate(vehicle_type=if_else(jump_vehicle_type=='bike','ebike', 'scooter'))
+      rdf <- rdf %>% mutate(vehicle_type=if_else(jump_vehicle_type=='bike','e-bike', 'scooter'))
     } else if(provider %in% c('bird','wheels','razor','skip','wind','spin','bolt')){
       rdf <- rdf %>% mutate(vehicle_type='scooter')
     } else if(provider=='lime'){
-      rdf <- rdf %>% mutate(vehicle_type=if_else(vehicle_type=='bike','ebike', 'scooter','moped'))
+      rdf <- rdf %>% mutate(vehicle_type=if_else(vehicle_type=='moped','e-moped',if_else(vehicle_type=='scooter','scooter',if_else(vehicle_type=='bike','bike','e-bike'))))
+    } else if(provider=='revel'){
+      rdf <- rdf %>% mutate(vehicle_type=if_else(vehicle_type=='electric_moped','e-moped'))
     } else if(provider=='cyclehop'){
-      rdf <- rdf %>% mutate(vehicle_type=if_else(is_ebike==1,'ebike','bike'))
+      rdf <- rdf %>% mutate(vehicle_type=if_else(is_ebike==1,'e-bike','bike'))
     }else if(provider == 'helbiz'){
-      rdf <- rdf %>% mutate(vehicle_type=if_else(vehicle_type=='bike','ebike', 'scooter'))
+      rdf <- rdf %>% mutate(vehicle_type=vehicle_type)
     } else if(provider %in% c('lyft')){
-      rdf <- rdf %>% mutate(vehicle_type=if_else(type=='electric_scooter','scooter','ebike'))
+      rdf <- rdf %>% mutate(vehicle_type=if_else(type=='electric_scooter','scooter',if_else(type=='electric_bike','ebike')))
     }
     # TODO: add SPIN
     
