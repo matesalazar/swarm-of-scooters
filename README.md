@@ -40,7 +40,7 @@ The following table includes the color that I used to symbolize the provider in 
 | Lime     | ![lime]   | #24D000 |
 | Lyft     | ![lyft]   | #4F1397 |
 | Razor    | ![razor]  | #FF0000 |
-| Helbiz   | ![helbiz]   | #FCCE24 |                                                                                          
+| Helbiz   | ![helbiz]  | #FCCE24 |                                                                                          
 | Spin     | ![spin]   | #FF5503 |
 | Wheels   | ![wheels] | #3D4CB7 |
 | Wind     | ![wind]   | #5E7C8B |
@@ -49,12 +49,13 @@ The following table includes the color that I used to symbolize the provider in 
 Zooming out on the map will triggers neighborhood polygon overlays with devices counts for each.
 
 [bird]: www/bird_circle2.png
+[bolt]: www/bolt_circle.png
 [hopr]: www/cyclehop_circle.png
 [jump]: www/jump_circle.png
 [lime]: www/lime_circle.png
 [lyft]: www/lyft_circle.png
 [razor]: www/razor_circle.png
-[skip]: www/skip_circle.png
+[helbiz]: www/helbiz_circle.png
 [spin]: www/spin_circle.png
 [wind]: www/wind_circle.png
 [wheels]: www/wheels_circle.png
