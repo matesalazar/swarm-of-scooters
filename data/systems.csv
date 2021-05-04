@@ -44,3 +44,4 @@ Washington DC,washington_dc,Helbiz,helbiz,https://api.helbiz.com/admin/reporting
 Washington DC,washington_dc,Helbiz,helbiz,https://api.helbiz.com/admin/reporting/alexandria/gbfs/free_bike_status.json
 Washington DC,washington_dc,Helbiz,helbiz,https://api.helbiz.com/admin/reporting/arlington/gbfs/free_bike_status.json
 Washington DC,washington_dc,Razor,razor,https://razorapi.net/api/v1/gbfs/Washington%20DC/free_bike_status.json
+Washington DC,washington_dc,Revel,revel,https://gbfs.gorevel.com/gbfs/v2/washingtondc/en/free_bike_status.json
