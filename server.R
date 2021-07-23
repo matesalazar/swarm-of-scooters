@@ -64,11 +64,11 @@ getDocklessDevices <- function (provider, url) {
     } else if(provider=='revel'){
       rdf <- rdf %>% mutate(vehicle_type=if_else(vehicle_type=='electric_moped','e-moped','moped'))
     } else if(provider=='cyclehop'){
-      rdf <- rdf %>% mutate(vehicle_type=if_else(is_ebike==1,'e-bike','bike'))
+      rdf <- rdf %>% mutate(vehicle_type=if_else(vehicle_type_id=='1','bike',if_else(vehicle_type_id=='2','e-bike',if_else(vehicle_type_id=='3','scooter','bike'))))
     }else if(provider == 'helbiz'){
       rdf <- rdf %>% mutate(vehicle_type=vehicle_type)
     } else if(provider %in% c('lyft')){
-      rdf <- rdf %>% mutate(vehicle_type=if_else(type=='electric_scooter','scooter',if_else(type=='electric_bike','ebike','bike')))
+      rdf <- rdf %>% mutate(vehicle_type=if_else(type=='electric_scooter','scooter',if_else(type=='electric_bike','e-bike','bike')))
     }
     # TODO: add SPIN
     
