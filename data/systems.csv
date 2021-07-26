@@ -27,6 +27,7 @@ Miami,miami,Bolt,bolt,https://api-lb.micromobility.com/mia/gbfs/en/free_bike_sta
 Miami,miami,Spin,spin,https://gbfs.spin.pm/api/gbfs/v1/miami/free_bike_status
 Miami,miami,HOPR,cyclehop,https://gbfs.hopr.city/api/gbfs/11/free_bike_status
 Miami,miami,Revel,revel,https://gbfs.gorevel.com/gbfs/v2/miami/en/free_bike_status.json
+Miami,miami,Lime,lime,https://data.lime.bike/api/partners/v1/gbfs/miami_district_2/free_bike_status.json
 Nashville,nashville,Bird,bird,https://mds.bird.co/gbfs/nashville/free_bikes
 New York City,new_york,Lime,lime,https://data.lime.bike/api/partners/v1/gbfs/new_york/free_bike_status.json
 New York City,new_york,Revel,revel,https://gbfs.gorevel.com/gbfs/v2/newyork/en/free_bike_status.json
