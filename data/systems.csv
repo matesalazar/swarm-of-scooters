@@ -46,3 +46,19 @@ Washington DC,washington_dc,Helbiz,helbiz,https://api.helbiz.com/admin/reporting
 Washington DC,washington_dc,Helbiz,helbiz,https://api.helbiz.com/admin/reporting/arlington/gbfs/free_bike_status.json
 Washington DC,washington_dc,Razor,razor,https://razorapi.net/api/v1/gbfs/Washington%20DC/free_bike_status.json
 Washington DC,washington_dc,Revel,revel,https://gbfs.gorevel.com/gbfs/v2/washingtondc/en/free_bike_status.json
+Memphis,Memphis,Bird,bird,https://mds.bird.co/gbfs/louisville/free_bikes
+Memphis,Memphis,Spin,spin,https://web.spin.pm/api/gbfs/v1/washington_dc/free_bike_status
+Pensacola,Pensacola,Bird,bird,https://mds.bird.co/gbfs/louisville/free_bikes
+Tampa,Tampa,Bird,bird,https://mds.bird.co/gbfs/Tampa/free_bikes
+Tampa,Tampa,Lime,lime,https://data.lime.bike/api/partners/v1/gbfs/Tampa/free_bike_status.json
+Tampa,Tampa,Spin,spin,https://web.spin.pm/api/gbfs/v1/Tampa/free_bike_status
+Nashville,nashville,Bird,bird,https://mds.bird.co/gbfs/nashville/free_bikes
+Nashville,nashville,Lime,lime,https://data.lime.bike/api/partners/v1/gbfs/nashville/free_bike_status.json
+Nashville,nashville,Spin,spin,https://web.spin.pm/api/gbfs/v1/Nashville/free_bike_status
+Lexington,lexington,Bird,bird,https://mds.bird.co/gbfs/lexington/free_bikes
+Lexington,lexington,Spin,spin,https://web.spin.pm/api/gbfs/v1/Lexington/free_bike_status
+Coral_gables,coral_gables,Bird,bird,https://mds.bird.co/gbfs/coral_gables/free_bikes
+Coral_gables,coral_gables,Spin,spin,https://web.spin.pm/api/gbfs/v1/coral_gables/free_bike_status
+Jacksonville,jacksonville,Bird,bird,https://mds.bird.co/gbfs/jacksonville/free_bikes
+Jacksonville,jacksonville,Spin,spin,https://web.spin.pm/api/gbfs/v1/jacksonville/free_bike_status
+Jacksonville,jacksonville,Helbiz,helbiz,https://api.helbiz.com/admin/reporting/jacksonville/gbfs/free_bike_status.json
